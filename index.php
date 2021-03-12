@@ -9,5 +9,6 @@
 </head>
 <body>
 <h1>Welcome</h1>
+<a href="https://discord.com/oauth2/authorize?client_id=818818609777868840&scope=bot&permissions=2147483647" title="Add to server">Add to server</a>
 </body>
 </html>
