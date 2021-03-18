@@ -6,7 +6,7 @@ $fileReader = file(ROOT . '/dico/list.txt');
 // définition d'un tableau et d'une variable de comptage d'erreur
 $dico = [];
 $count = 0;
-$regexTag = '/^[\@][a-zA-Z\s]+[\#][\d]{4}$/';
+$regexTag = '/<@.?[0-9]*?>/';
 $regexBot = '/^[\!][a-z]+$/';
 // parcours du tableau (fichier) et stockage dans un tableau sous utf8
 foreach ($fileReader as $key => $value) {
