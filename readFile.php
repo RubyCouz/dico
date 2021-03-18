@@ -24,6 +24,8 @@ if (isset($_POST['value'])) {
     foreach ($valueArray as $key => $value) {
         // si la valeur saisie n'est pas dans le dico
         if(!preg_match($regexTag, $value) && filter_var($value, FILTER_VALIDATE_URL) === false && !preg_match($regexBot, $value) && !preg_match($regexReact, $value)) {
+            $value = htmlspecialchars($value);
+            echo $value;
             if (!in_array($value, $dico)) {
                 $count++;
 //            array_push($error, $value);
@@ -31,5 +33,6 @@ if (isset($_POST['value'])) {
         }
 
     }
-    echo $count;
+
+//    echo $count;
 }
