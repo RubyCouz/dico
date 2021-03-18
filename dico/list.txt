@@ -888,6 +888,7 @@ alpinisme
 alpiniste
 alsace
 alsaciens
+alt+f4
 altération
 altercation
 altérer
@@ -20953,6 +20954,7 @@ Talbot
 talent
 talents
 talentueux
+talk
 taloche
 talon
 talons
@@ -21671,6 +21673,8 @@ Transylvanie
 trappe
 traque
 traquenard
+trash
+trash-talk
 traumatisme
 travail
 travaillaient
