@@ -22,7 +22,7 @@ if (isset($_POST['value'])) {
     // par cour du tableau contenant la valuer envoyé
     foreach ($valueArray as $key => $value) {
         // si la valeur saisie n'est pas dans le dico
-        if(!preg_match($regexTag, $value) && filter_var($value, FILTER_VALIDATE_URL) === false && !preg_match($regexBot, $value)) {
+        if(!preg_match($regexTag, $value) && filter_var($value, FILTER_VALIDATE_URL) !== false && !preg_match($regexBot, $value)) {
             if (!in_array($value, $dico)) {
                 $count++;
 //            array_push($error, $value);
