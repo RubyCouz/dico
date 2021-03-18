@@ -8,7 +8,7 @@ $dico = [];
 $count = 0;
 $regexTag = '/<@.?[0-9]*?>/';
 $regexBot = '/^[\!][a-z]+$/';
-$regexReact = '/^[\:][\w\_\-]+[\:]$/';
+$regexReact = '/^[\:][a-zA-Z0-9\_\-]+[\:]$/';
 // parcours du tableau (fichier) et stockage dans un tableau sous utf8
 foreach ($fileReader as $key => $value) {
     array_push($dico, trim(utf8_encode($value)));
